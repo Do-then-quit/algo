@@ -20,8 +20,7 @@ int main(void) {
                 isInput[i][j] = false;
             } else {
                 isInput[i][j] = true;
-            }
-            
+            }  
         }
     }
 
@@ -38,8 +37,7 @@ int main(void) {
                 temp++;
             } else {
                 temp--;
-            }
-            
+            }  
             continue;
         }
 
@@ -78,10 +76,6 @@ int main(void) {
 bool RowCheck(int target, int i, int j) {
     for (int k = 0; k < 9; k++)
     {
-        // if (k == j)
-        // {
-        //     continue;
-        // }
         if (board[i][k] == target)
         {
             return false;
@@ -93,10 +87,6 @@ bool RowCheck(int target, int i, int j) {
 bool ColCheck(int target, int i, int j) {
     for (int k = 0; k < 9; k++)
     {
-        // if (k == j)
-        // {
-        //     continue;
-        // }
         if (board[k][j] == target)
         {
             return false;
